@@ -37,9 +37,9 @@ Il combine des données issues de plusieurs sources (`RandomUser`, `Randommer`, 
 GET http://localhost:3000/profile
 
 Voici un exemple de réponse obtenue depuis l’API `/profile` :
-
-![Résultat de l’API](./src/Api_result.PNG)
 ```
+![Résultat de l’API](./src/Api_result.PNG)
+
 
 ### Dark Data
 
