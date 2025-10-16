@@ -42,19 +42,19 @@ Voici un exemple de réponse obtenue depuis l’API `/profile` :
 
 ## Dark Data
 
-*ibanCountry	: Déduit le pays à partir des deux premières lettres de l’IBAN
-*userNameLength	:	Nombre de caractères dans le nom complet
-*registrationDuration	:	Durée d’inscription (en années)
+* ibanCountry	: Déduit le pays à partir des deux premières lettres de l’IBAN
+* userNameLength	:	Nombre de caractères dans le nom complet
+* registrationDuration	:	Durée d’inscription (en années)
 * ageCategory	:	Catégorise l’utilisateur : Jeune, Adulte ou Senior
 
 ## Requirements
-Node.js
-npm
-Express.js
-Axios
-Dotenv
-APIs publiques externes 
-git
+- Node.js
+- npm
+- Express.js
+- Axios
+- Dotenv
+- APIs publiques externes 
+- git
 
 ## Lancer L'API
 
