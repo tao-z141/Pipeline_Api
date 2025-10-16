@@ -30,7 +30,7 @@ Ce projet Node.js permet de générer des **profils utilisateurs complets** à p
 ---
 ## Exemple de sortie
 
-```json
+```bash
 User: {
   name: 'Thomas Gardner',
   email: 'thomas.gardner@example.com',
