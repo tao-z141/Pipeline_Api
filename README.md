@@ -26,24 +26,21 @@ Il combine des données issues de plusieurs sources (`RandomUser`, `Randommer`, 
 - Quote 
 
 ---
-## L’API
+# L’API
 
-### Endpoint principal : `/profile`
+## Endpoint principal : `/profile`
 - **Méthode :** GET  
 - **Description :** Retourne un profil complet agrégé depuis plusieurs APIs.
 
-#### Exemple de requête :
-```bash
+## Exemple de requête :
+
 GET http://localhost:3000/profile
 
 Voici un exemple de réponse obtenue depuis l’API `/profile` :
 
 [Résultat de l’API](./Api_result.PNG)
-```
 
-
-
-### Dark Data
+## Dark Data
 
 *ibanCountry	: Déduit le pays à partir des deux premières lettres de l’IBAN
 *userNameLength	:	Nombre de caractères dans le nom complet
