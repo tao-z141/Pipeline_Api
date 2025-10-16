@@ -15,7 +15,9 @@ async function getRandomUser() {
     email: user.email,
     gender: user.gender,
     location: `${user.location.city}, ${user.location.country}`,
-    picture: user.picture.large
+    picture: user.picture.large,
+    dob: user.dob,           
+    registered: user.registered 
   };
 }
 
@@ -83,39 +85,20 @@ async function getQuote() {
   };
 }
 
-async function AllFunctions() {
+export async function AllFunctions() {
   try {
-
     const user = await getRandomUser();
-    console.log('User:', user);
-
     const phone = await getPhoneNumber();
-    console.log('Phone number:', phone);
-
     const iban = await getIban();
-    console.log('IBAN:', iban);
-
     const card = await getCreditCard();
-    console.log('Credit Card:', card);
-
-    const nom = await getRandomName();
-    console.log('Random name:', nom);
-
-    const word = await getRandomWord();
-    console.log('Random word:', word);
-
+    const random_name = await getRandomName();
     const animal = await getPet();
-    console.log('Pet:', animal);
-
     const joke = await getJoke();
-    console.log('Joke:', joke);
-
     const quote = await getQuote();
-    console.log('Quote:', `"${quote.content}" — ${quote.author}`);
+
+    return { user, phone, iban, card, random_name, animal, joke, quote };
 
   } catch (err) {
-    console.error('Erreur:', err.message);
+    throw new Error(err.message);
   }
 }
-
-AllFunctions();
